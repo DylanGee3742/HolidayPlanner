@@ -6,3 +6,12 @@ const randomNum = arr => {
 
     }
 ;}
+
+const countryPicker = () => {
+    const countries = ['Italy', 'France', 'Spain'];
+    let destination = randomNum(countries);
+    return destination;
+};
+
+
+console.log(countryPicker());
