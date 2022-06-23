@@ -40,7 +40,8 @@ const cityPicker = () => {
 var city = cityPicker();
 console.log(city);
 
-const attractions = () => {
+//Results of cityPicker determine which array of cities should be access. Random number generator then picks an attraction and returns value.
+const attractionPicker = () => {
     let attraction = '';
     switch(city) {
         case 'Rome':
@@ -82,5 +83,6 @@ const attractions = () => {
 } return attraction
 };
 
-var attraction = attractions()
+////Value of attractionPicker stored in variable for later use
+var attraction = attractionPicker()
 console.log(attraction);
