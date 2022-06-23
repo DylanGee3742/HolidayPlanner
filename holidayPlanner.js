@@ -16,7 +16,7 @@ const countryPicker = () => {
 
 //Value of countryPicker() stored in variable country for later use
 var country = countryPicker()
-console.log(country);
+
 
 //Results of countryPicker determine which array of cities should be access. Random number generator then picks a city and returns value.
 const cityPicker = () => {
@@ -38,7 +38,7 @@ const cityPicker = () => {
 
 //Value of cityPicker stored in variable for later use 
 var city = cityPicker();
-console.log(city);
+
 
 //Results of cityPicker determine which array of cities should be access. Random number generator then picks an attraction and returns value.
 const attractionPicker = () => {
@@ -85,4 +85,13 @@ const attractionPicker = () => {
 
 ////Value of attractionPicker stored in variable for later use
 var attraction = attractionPicker()
-console.log(attraction);
+
+//Creates and prints a message that uses values from previous functions to fill in place holders.
+const message = () => {
+    return console.log(`Hey there user I'm going to help you plan out a holiday! 
+    First lets pick a country, I think you should go to ${country}.
+    You should stay in ${city}, it's really great there.
+    Whilst you're there I recommend visiting ${attraction}.`);
+}
+
+message();
