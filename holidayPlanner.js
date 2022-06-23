@@ -22,7 +22,7 @@ console.log(country);
 const cityPicker = () => {
     const italy = ['Rome', 'Venice', 'Milan'];
     const france = ['Paris', 'Nice', 'Marseille'];
-    const spain = ['Barcelona', 'Madrid', 'Sevilla'];
+    const spain = ['Barcelona', 'Madrid', 'Seville'];
     if (country === 'Italy') {
         let city = randomNum(italy);
         return city;
@@ -39,3 +39,48 @@ const cityPicker = () => {
 //Value of cityPicker stored in variable for later use 
 var city = cityPicker();
 console.log(city);
+
+const attractions = () => {
+    let attraction = '';
+    switch(city) {
+        case 'Rome':
+            const rome = ['Colossuem', 'Pantheon', 'Borghess Gardens'];
+            attraction = randomNum(rome)
+            break;
+        case'Venice':
+            const venice = ['Piazza San Marco', 'Grand Canal', 'Rialto Bridge' ]
+            attraction = randomNum(venice)
+            break;
+        case 'Milan':
+            let  milan = ['Il Duomo', 'Castello Sforzesco', 'Pinacoteca di Brera']
+            attraction = randomNum(milan)
+            break;
+        case 'Paris':
+            const paris = ['Eiffel Tower', 'Notre Dame Cathedral', 'Louvre Museum']
+            attraction = randomNum(paris)
+            break;
+        case 'Nice':
+            const nice = ['Castle Hill', 'Promenade des Anglais', 'Old Town']
+            attraction = randomNum(nice)
+            break;
+        case 'Marseille':
+            const marseille = ['Old Port', 'Calanques National Park', 'La Corniche']
+            attraction = randomNum(marseille)
+            break;
+        case 'Barcelona':
+            const barcelona = ['Basílica de la Sagrada Familia', 'Casa Batllo', 'Gothic Quarter (Barri Gotic)']
+            attraction = randomNum(barcelona)
+            break;
+        case 'Madrid':
+            const madrid = ['Parque del Retiro', 'Santiago Bernabeu Stadium', 'Santiago Bernabeu Stadium']
+            attraction = randomNum(madrid)
+            break;
+        case 'Seville':
+            const seville = ['Alcazar of Seville', 'Seville Cathedral & La Giralda', 'Plaza de España']
+            attraction = randomNum(seville)
+            break;       
+} return attraction
+};
+
+var attraction = attractions()
+console.log(attraction);
